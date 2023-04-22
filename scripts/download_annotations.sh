@@ -11,7 +11,7 @@ BLOB='https://datarelease.blob.core.windows.net/swinbert'
 # Download caption annotations pre-parsed in TSV format
 # --------------------------------
 
-for DATASET in 'VATEX' 'MSRVTT-v2' 'TVC' 'YouCook2' 'MSVD'
+for DATASET in 'YouCook2'
 do
     wget -nc $BLOB/datasets/${DATASET}.zip -O $REPO_DIR/datasets/${DATASET}.zip
     unzip $REPO_DIR/datasets/${DATASET}.zip -d $REPO_DIR/datasets/
